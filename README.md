@@ -1,4 +1,4 @@
-# VVS Toolkit
+# CSWAP Toolkit
 
 This repository is a monorepo manage with [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) and [Lerna](https://lerna.js.org/). 
 
@@ -12,14 +12,14 @@ Imported https://github.com/pancakeswap/pancake-info-api
 
 ## Packages
 
-- `vvs-uikit` : React components used to build the VVS UI
-- `vvs-eslint-config` : An ESLint config for VVS, with Typescript and Prettier support
-- `vvs-frontend` : Main VVS web app
-- `vvs-info-api` : express nodejs API implementation for VVS on-chain data query
-- `vvs-prelaunch` : prelaunch landing page with count down clock
-- `vvs-profile-sdk` : Handy functions to retrieve data for VVS Profile system
-- `vvs-swap-sdk`: Handy functions to retrieve data for VVS contracts
-- `token-lists` : Main VVS token list and tools to validate it
+- `cswap-uikit` : React components used to build the CSWAP UI
+- `cswap-eslint-config` : An ESLint config for CSWAP, with Typescript and Prettier support
+- `cswap-frontend` : Main CSWAP web app
+- `cswap-info-api` : express nodejs API implementation for CSWAP on-chain data query
+- `cswap-prelaunch` : prelaunch landing page with count down clock
+- `cswap-profile-sdk` : Handy functions to retrieve data for CSWAP Profile system
+- `cswap-swap-sdk`: Handy functions to retrieve data for CSWAP contracts
+- `token-lists` : Main CSWAP token list and tools to validate it
 
 ## How to use
 
@@ -35,45 +35,45 @@ npm install --global lerna
 lerna bootstrap
 ```
 
-### Build `vvs-uikit`
+### Build `cswap-uikit`
 
 ```
-lerna run build --scope=vvs-uikit
+lerna run build --scope=cswap-uikit
 ```
 
-### Build `vvs-sdk`
+### Build `cswap-sdk`
 
 ```
-lerna run build --scope=vvs-sdk
+lerna run build --scope=cswap-sdk
 ```
-### Build `vvs-info-api`
+### Build `cswap-info-api`
 
 ```
-lerna run build --scope=vvs-info-api
+lerna run build --scope=cswap-info-api
 ```
 
-### Start `vvs-info-api`
+### Start `cswap-info-api`
 
 ```
-lerna run start:dev --stream --scope=vvs-info-api
+lerna run start:dev --stream --scope=cswap-info-api
 ```
 
-### Build `vvs-frontend`
+### Build `cswap-frontend`
 
 ```
-lerna run build --scope=vvs-frontend
+lerna run build --scope=cswap-frontend
 ```
 
-### Start `vvs-frontend`
+### Start `cswap-frontend`
 
 ```
-lerna run start --stream --scope=vvs-frontend
+lerna run start --stream --scope=cswap-frontend
 ```
 
 ### Start `vss-frontend` with build the dependencies
 
 ```
-lerna run build --scope={vvs-uikit,vvs-sdk} && lerna run start --stream --scope=vvs-frontend
+lerna run build --scope={cswap-uikit,cswap-sdk} && lerna run start --stream --scope=cswap-frontend
 ```
 
 ### Run test
@@ -109,8 +109,8 @@ change `name` in `<child>/package.json` after imported
 ### Add sibling dependencies
 
 ```
-lerna add vvs-uikit --scope=vvs-frontend
-lerna add vvs-sdk --scope=vvs-frontend
+lerna add cswap-uikit --scope=cswap-frontend
+lerna add cswap-sdk --scope=cswap-frontend
 ```
 
 ### Remove child dependencies (when changing branches with different dependencies)

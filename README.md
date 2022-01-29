@@ -45,7 +45,7 @@ lerna run build
 
 ```
 cd ./packages/cswap-frontend
-npm run start
+npm start
 ```
 
 ## Troubleshooting

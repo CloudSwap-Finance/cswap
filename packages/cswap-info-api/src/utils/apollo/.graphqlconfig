@@ -1,0 +1,15 @@
+{
+  "name": "CSWAP Exchange",
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "CSWAP Exchange": {
+        "url": "https://graph.cswap.finance/exchange",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}

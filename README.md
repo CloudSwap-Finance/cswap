@@ -35,62 +35,17 @@ npm install --global lerna
 lerna bootstrap
 ```
 
-### Build `cswap-uikit`
+### Build 
 
 ```
-lerna run build --scope=cswap-uikit
-```
-
-### Build `cswap-sdk`
-
-```
-lerna run build --scope=cswap-sdk
-```
-### Build `cswap-info-api`
-
-```
-lerna run build --scope=cswap-info-api
-```
-
-### Start `cswap-info-api`
-
-```
-lerna run start:dev --stream --scope=cswap-info-api
-```
-
-### Build `cswap-frontend`
-
-```
-lerna run build --scope=cswap-frontend
+lerna run build
 ```
 
 ### Start `cswap-frontend`
 
 ```
-lerna run start --stream --scope=cswap-frontend
-```
-
-### Start `vss-frontend` with build the dependencies
-
-```
-lerna run build --scope={cswap-uikit,cswap-sdk} && lerna run start --stream --scope=cswap-frontend
-```
-
-### Run test
-
-```
-lerna run test
-```
-
-### Run lint
-
-```
-lerna run lint
-```
-
-### Run prettier check
-```
-lerna run format:check
+cd ./packages/cswap-frontend
+npm run start
 ```
 
 ## Troubleshooting
